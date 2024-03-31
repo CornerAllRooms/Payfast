@@ -1,0 +1,42 @@
+<!DOCTYPE html> <html> <div style="position: relative; width: 100%; height: 0; padding-top: 56.2225%;
+ padding-bottom: 0; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden;
+ border-radius: 8px; will-change: transform;">
+  <iframe loading="lazy" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0;"
+    src="https://CornerAllrooms.com/programme" allowfullscreen="allowfullscreen" allow="fullscreen">
+  </iframe>
+</div>
+<a href="https://CornerAllrooms.com/cart" target="_blank" rel="noopener">Check Cart</a>
+ <head> 
+<title>
+ </title> 
+</head> 
+<body> <form name="PayFastPayNowForm" action="https://payment.payfast.io/eng/process" method="post">
+<input required type="hidden" name="cmd" value="_paynow">
+<input required type="hidden" name="receiver" pattern="[0-9]" value="23908197">
+<input type="hidden" name="return_url" value="Https://CornerAllrooms.com/cart">
+<input type="hidden" name="cancel_url" value="Https://CornerAllrooms.com">
+<input type="hidden" name="notify_url" value="Https://CornerAllrooms.com/gameroom">
+<table>
+<tr>
+<td><label id="PayFastAmountLabel" for="PayFastAmount">Amount: </label></td>
+<td><input required id="PayFastAmount" type="number" step=".01" name="amount" min="5.00" placeholder="5.00" value="35"></td>
+</tr>
+</table>
+
+<input required type="hidden" name="item_name" maxlength="255" value="Fitness programme">
+<input type="hidden" name="item_description" maxlength="255" value="Adjust the payment to the amount of sessions">
+<input required type="hidden" name="subscription_type" pattern="1"value="1">
+<input type="hidden" name="recurring_amount" value="5">
+<input required type="hidden" name="cycles" pattern="[0-9]" value="0">
+<input required type="hidden" name="frequency" pattern="[0-9]" value="3">
+<table>
+<tr>
+<td colspan=2 align=center>
+<input type="image" src="https://my.payfast.io/images/buttons/Subscribe/Light-Small-Subscribe.png" alt="Subscribe" title="Subscribe with Payfast">
+</td>
+</tr>
+</table>
+</form>
+ </body>
+ </html>
+
